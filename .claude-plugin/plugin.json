@@ -1,0 +1,14 @@
+{
+  "name": "odoo-senior-engineer",
+  "version": "17.0.0",
+  "description": "Senior-grade Odoo 17 engineering: agent, skills, and slash commands covering both technical (ORM, OWL, security, deployment) and business (Sales, CRM, Accounting, Inventory, MRP, HR, Project, eCommerce, etc.) domains. Follows Odoo official + OCA standards.",
+  "author": {
+    "name": "Jean Suarez",
+    "email": "jmsuarez2005@gmail.com",
+    "url": "https://github.com/jmsuarez2005"
+  },
+  "homepage": "https://github.com/jmsuarez2005/odoo-senior-engineer-pack",
+  "repository": "https://github.com/jmsuarez2005/odoo-senior-engineer-pack",
+  "license": "MIT",
+  "keywords": ["odoo", "odoo17", "erp", "oca", "owl", "qweb", "business", "senior", "module-development"]
+}
