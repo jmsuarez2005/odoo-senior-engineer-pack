@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2026 Jean Suarez
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <menuitem id="menu_overtime_root" name="Overtime"
+              web_icon="advanced_module,static/description/icon.png"/>
+    <menuitem id="menu_overtime_requests" name="My Requests"
+              parent="menu_overtime_root" action="action_hr_overtime" sequence="10"/>
+</odoo>

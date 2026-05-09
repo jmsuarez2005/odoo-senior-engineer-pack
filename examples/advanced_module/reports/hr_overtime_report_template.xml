@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2026 Jean Suarez
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template id="report_overtime_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2>Overtime Slip <span t-out="o.name"/></h2>
+
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <strong>Employee:</strong>
+                                <span t-field="o.employee_id"/>
+                            </div>
+                            <div class="col-6">
+                                <strong>Date:</strong>
+                                <span t-field="o.date"
+                                      t-options='{"widget": "date"}'/>
+                            </div>
+                        </div>
+
+                        <table class="table table-sm mt-4">
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th class="text-end">Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span t-out="o.justification or 'Overtime work'"/>
+                                    </td>
+                                    <td class="text-end">
+                                        <span t-out="o.hours"
+                                              t-options='{"widget": "float", "precision": 2}'/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p class="mt-4" t-if="o.state == 'approved'">
+                            Approved on
+                            <span t-field="o.write_date" t-options='{"widget": "date"}'/>
+                            by
+                            <span t-out="o.write_uid.name"/>.
+                        </p>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

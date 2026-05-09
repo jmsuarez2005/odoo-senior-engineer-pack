@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2026 Jean Suarez
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="view_minimal_book_list" model="ir.ui.view">
+        <field name="name">minimal.book.list</field>
+        <field name="model">minimal.book</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="title"/>
+                <field name="author"/>
+                <field name="pages"/>
+                <field name="is_thick"/>
+                <field name="tag"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_minimal_book_form" model="ir.ui.view">
+        <field name="name">minimal.book.form</field>
+        <field name="model">minimal.book</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="title" placeholder="Book title"/></h1>
+                    </div>
+                    <group>
+                        <field name="author"/>
+                        <field name="pages"/>
+                        <field name="tag"/>
+                        <field name="is_thick" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_minimal_book" model="ir.actions.act_window">
+        <field name="name">Books</field>
+        <field name="res_model">minimal.book</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_minimal_root" name="Books"/>
+    <menuitem id="menu_minimal_books" parent="menu_minimal_root"
+              action="action_minimal_book" name="All Books"/>
+
+</odoo>

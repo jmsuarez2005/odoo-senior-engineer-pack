@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2026 Jean Suarez
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="view_hr_overtime_approve_wizard_form" model="ir.ui.view">
+        <field name="name">hr.overtime.approve.wizard.form</field>
+        <field name="model">hr.overtime.approve.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Approve Overtime">
+                <group>
+                    <field name="overtime_id"/>
+                    <field name="note" placeholder="Optional note for the employee"/>
+                    <field name="notify"/>
+                </group>
+                <footer>
+                    <button name="action_confirm" string="Approve"
+                            type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

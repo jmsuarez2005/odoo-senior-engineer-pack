@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2026 Jean Suarez
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="action_report_overtime" model="ir.actions.report">
+        <field name="name">Overtime Slip</field>
+        <field name="model">hr.overtime</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">advanced_module.report_overtime_template</field>
+        <field name="report_file">advanced_module.report_overtime_template</field>
+        <field name="binding_model_id" ref="model_hr_overtime"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

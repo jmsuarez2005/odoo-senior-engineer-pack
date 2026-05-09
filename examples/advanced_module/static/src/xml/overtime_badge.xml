@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="advanced_module.OvertimeBadge">
+        <span class="badge text-bg-warning"
+              t-if="!state.loading and state.count > 0">
+            <i class="fa fa-clock-o me-1"/>
+            <t t-esc="state.count"/> pending
+        </span>
+        <span class="badge text-bg-light"
+              t-elif="!state.loading">
+            None pending
+        </span>
+    </t>
+
+</templates>
