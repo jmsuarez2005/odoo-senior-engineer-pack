@@ -29,3 +29,10 @@ Thumbs.db
 
 # Plugin packaging artifacts
 *.plugin
+
+# Claude Code local config (NOT .claude-plugin/ — that is the plugin itself)
+CLAUDE.md
+.claude/
+.claude.json
+.claude.local.json
+
