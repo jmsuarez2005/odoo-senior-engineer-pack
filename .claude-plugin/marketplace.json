@@ -11,10 +11,12 @@
       "name": "odoo-senior-engineer",
       "description": "Senior Odoo 17 engineer — 1 agent, 33 skills (technical + business domain), 13 slash commands. Tracks the 17.0 branch.",
       "source": {
-        "source": "github",
-        "repo": "jmsuarez2005/odoo-senior-engineer-pack",
-        "ref": "17.0"
-      }
+        "source": "url",
+        "url": "https://github.com/jmsuarez2005/odoo-senior-engineer-pack.git",
+        "ref": "17.0",
+        "sha": "a537056c89aa1f9cd16e242c34a1368397aacd22"
+      },
+      "homepage": "https://github.com/jmsuarez2005/odoo-senior-engineer-pack/tree/17.0"
     }
   ]
 }
