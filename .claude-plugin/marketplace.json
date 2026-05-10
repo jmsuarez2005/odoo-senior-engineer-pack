@@ -1,0 +1,20 @@
+{
+  "name": "odoo-senior-engineer-pack",
+  "description": "Multi-version Odoo senior engineer plugin pack — agent, skills, and slash commands distilled from Odoo official docs and OCA standards. One plugin per Odoo major version.",
+  "owner": {
+    "name": "Jean Suarez",
+    "email": "jmsuarez2005@gmail.com",
+    "url": "https://github.com/jmsuarez2005"
+  },
+  "plugins": [
+    {
+      "name": "odoo-senior-engineer",
+      "description": "Senior Odoo 17 engineer — 1 agent, 33 skills (technical + business domain), 13 slash commands. Tracks the 17.0 branch.",
+      "source": {
+        "source": "github",
+        "repo": "jmsuarez2005/odoo-senior-engineer-pack",
+        "ref": "17.0"
+      }
+    }
+  ]
+}
